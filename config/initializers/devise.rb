@@ -1,3 +1,5 @@
 Devise.setup do |config|
-  config.secret_key = '24922d75cda873e1e2482a929beb6bba30713affe6e0088a7645fb26976b92f4aa8ba3536ddb4a193a009986b0a2cdca20ef8207638b74b6bd866a024a62bed7'  
+  config.secret_key = ENV['secret_key_base']
+  # example for running devise with setting the key
+  # || config.secret_key = '74d3b4de7916b5c7dc403aba4d4608d7bbfc52ae60fd2592422bbba586daf62ce73bd90c1be8c446e0ac4a9759908bae14cda7d45c331b8473a44d84c9ebfdf8'
 end
